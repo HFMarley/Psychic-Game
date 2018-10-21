@@ -51,7 +51,7 @@
 
             if (guessesRemaining <= 0) {
                 lossCount++;
-                document.getElementById("lossCount").innerHTML = lossCount++;
+                document.getElementById("lossCount").innerHTML = lossCount;
                 console.log("You Lost!");
                 alert("you're a loser!")
                 guessesRemaining = 9;
@@ -63,9 +63,10 @@
                 console.log(computerChoice);
             }
             if (computerChoice === userChoice) {
+                winCount++;
                 console.log("You won!");
                 alert("You won!");
-                document.getElementById("winCount").innerHTML = winCount++;
+                document.getElementById("winCount").innerHTML = winCount;
                 guessedLetters = [];
                 document.getElementById("guessedLetters").innerHTML = guessedLetters;
                 randomIndex = Math.floor(Math.random() * alphabet.length);
