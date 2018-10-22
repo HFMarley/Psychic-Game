@@ -25,7 +25,7 @@ document.onkeyup = function (event) {
         lossCount++;
         document.getElementById("lossCount").innerHTML = lossCount;
         console.log("You Lost!");
-        alert("you're a loser!")
+        alert("you are not psychic!")
         guessesRemaining = 9;
         guessedLetters = [];
         document.getElementById("guessedLetters").innerHTML = guessedLetters;
